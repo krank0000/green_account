@@ -16,7 +16,7 @@
 }
 
 h2{
-    color: #0b995e;
+    color: black;
 }
 
 form{
@@ -34,6 +34,7 @@ input{
     position: relative;left: 10px;
     width: 400px;height: 50px;
     letter-spacing: 5px;
+    text-align: center;
 }
 
 #add_type{
@@ -63,4 +64,82 @@ input{
     position: relative;top: -20px;left: 40px;
     height: 50px;width: 90px;
     font-size: 25px;letter-spacing: 5px;
+    background-color: #0b995e;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+#date_Range{
+    border-radius: 15px;
+    background-color: #FFFFCE;
+    position: absolute; top: 250px; left: 730px;
+    width: 560px; height: 100px;
+    display: flex;
+}
+
+[class^=Range]{
+    font-size: 20px;
+    height: 30px;
+    margin: 25px;
+}
+
+#date_Range p{
+    font-size: 50px;
+    display: inline;
+    position: relative;
+    top: 5px;
+}
+
+#Range_btn{
+    border-radius: 25px;
+    font-size: 20px;
+    height: 50px;
+    margin-top: 25px;
+    background-color: #0b995e;
+    color: white;
+}
+
+#data_record{
+    border-radius: 15px;
+    background-color: #FFFFCE;
+    position: absolute; top: 250px; left: 10px;
+    width: 680px; height: auto;
+    padding: 30px 10px 30px 10px;
+    font-family: "微軟正黑體";
+}
+
+#record_title{
+    display: flex;
+    font-size: 30px;
+    letter-spacing: 2px;
+    width: 500px; height: 60px;
+    margin: auto;
+    position: relative;
+    padding: 0 30px 0 30px;
+    border-bottom: black 2px solid;
+}
+
+#record_title p{
+    margin: auto;
+    text-align: center;
+}
+
+.record_content{
+    margin: 10px 60px;
+    font-size: 20px;
+    width: 560px;
+    line-height: 30px;
+}
+
+.record_content caption{
+    float: left;
+}
+
+#record_sum{
+    margin: 30px 60px 0px 60px;
+    font-size: 25px;
+    padding-top: 10px;
+    border-top: black 2px solid;
 }

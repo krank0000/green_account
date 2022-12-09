@@ -9,6 +9,7 @@
         @import url(../asset/css/main.css);
         @import url(../asset/css/nav.css);
         @import url(../asset/css/account.css);
+        @import url(../asset/js/account.js);
     </style>
 </head>
 <body>
@@ -30,6 +31,60 @@
                     <input type="text" id="add_remark" placeholder="備註">
                     <button type="submit" id="add_btn">新增</button>
                 </form>
+            </div>
+            <div id="data">
+                <section id="data_record">
+                    <div id="record_title">
+                        <p id="record_data1">2021/12/25</p>
+                        <p >～</p>
+                        <p id="record_data2">2022/12/26</p>
+                    </div>
+                    <table class="record_content" border="1">
+                        <caption>2021/12/25(日)</caption>
+                        <tr>
+                            <td>奶茶</td>
+                            <td>金額:45元</td>
+                            <td>碳足跡:140g</td>
+                        </tr>
+                        <tr>
+                            <td>三明治</td>
+                            <td>金額:25元</td>
+                            <td>碳足跡:100g</td>
+                        </tr>
+                    </table>
+                    <table class="record_content" border="1">
+                        <caption>2021/12/26(一)</caption>
+                        <tr>
+                            <td>紅茶</td>
+                            <td>金額:45元</td>
+                            <td>碳足跡:120g</td>
+                        </tr>
+                        <tr>
+                            <td>三明治</td>
+                            <td>金額:25元</td>
+                            <td>碳足跡:100g</td>
+                        </tr>
+                    </table>
+                    <div id="record_sum" >
+                        <table>
+                            <tr>
+                                <td>總計</td>
+                                <td>金額:120元</td>
+                                <td>碳足跡:460g</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+                <section id="data_detail">
+                    <div id="date_Range">
+                        <form action="">
+                            <input type="date" class="Range_1">
+                            <p>~</p>
+                            <input type="date" class="Range_2">
+                            <button type="submit" id="Range_btn">GO</button>
+                        </form>
+                    </div>
+                </section>
             </div>
         </aside>
     </main>
