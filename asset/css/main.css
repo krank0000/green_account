@@ -1,0 +1,19 @@
+body {
+    background-color: #0b995e;
+    font-family: NSimSun;
+    padding: 30px 30px 30px 30px;
+}
+
+#navBar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    margin: auto;
+    left: 0;right: 0;top: 0;
+}
+main{
+    height: 1000px;
+
+
+}
+

@@ -1,0 +1,56 @@
+*{
+    color: white;
+}
+
+#Nav{
+    background-color: #0b995e;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#nav{
+    width: 100%;
+    display: flex;
+}
+
+#title{
+    width: 100%;
+    background-color: #0b995e;
+    padding: 10px 5px 5px 5px;
+    display: flex;
+    position: relative;
+    left: 10px;
+}
+
+a:link{
+    text-decoration: none;
+
+}
+
+a h1{
+    position: relative;
+    left: 20px; 
+    width: 190px;
+    color: white;
+    font-size: 30px;
+    font-family: NSimSun;
+}
+
+
+a h1:hover{
+    transform: scale(1.1,1.1);
+    transition: all 1s ease-out;
+}
+
+img{
+    position: absolute;
+    float: right;
+    width: 100px;
+    left: 1380px;top: 15px;
+}
+
+img:hover{
+    transform: scale(1.1,1.1);
+    transition: all 1s ease-out;
+}
