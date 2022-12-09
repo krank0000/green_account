@@ -11,9 +11,25 @@ body {
     margin: auto;
     left: 0;right: 0;top: 0;
 }
+
+
 main{
     height: 1000px;
-
-
 }
 
+#main_title{
+    width: 100px; height: 550px;
+    position: fixed;
+    top: 100px; 
+    writing-mode: vertical-lr;
+    font-size: 40px;
+    letter-spacing: 15px;
+}
+
+#main_body{
+    position: fixed;
+    width: 1280px; height: auto;
+    top: 100px; left: 170px;
+    padding: 10px;
+    border-radius: 15px;
+}

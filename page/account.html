@@ -8,12 +8,29 @@
     <style>
         @import url(../asset/css/main.css);
         @import url(../asset/css/nav.css);
+        @import url(../asset/css/account.css);
     </style>
 </head>
 <body>
     <main>
         <aside id="main_title">
             <h1>綠色記帳本</h1>
+        </aside>
+        <aside id="main_body">
+            <div id="add">
+                <form action="">
+                    <h2>日期 ：<input type="date" id="add_date"></h2><br>
+                    <select name="type" id="add_type">
+                        <option value="" disabled selected hidden>類別</option>
+                        <option value="vegetable">蔬菜</option>
+                        <option value="meat">肉類</option>
+                        <option value="milk">乳製品</option>
+                    </select>
+                    <input type="number" id="add_money" placeholder="$ 金額">
+                    <input type="text" id="add_remark" placeholder="備註">
+                    <button type="submit" id="add_btn">新增</button>
+                </form>
+            </div>
         </aside>
     </main>
     <iframe src="../page/nav.html" id="navBar" frameborder="0" scrolling="no"></iframe>
