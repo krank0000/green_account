@@ -13,7 +13,83 @@
 </head>
 <body>
     <main>
-        
+        <aside id="main_title">
+            <h1>會員中心</h1>
+        </aside>
+
+        <div class="big">
+            <table class="info">
+                <tr>
+                    <td>帳號資訊</td>
+                    <td>帳號：</td>
+                    <td> <input type="text" name="account"></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="4">個人資訊</td>
+                    <td>姓名：</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>電子郵件：</td>
+                    <td><input type="text" name="mail" style="width: 300px;"></td>
+                </tr>
+                <tr>
+                    <td>生日：</td>
+                    <td><input type="date" name="birthday"></td>
+                </tr>
+
+                <tr>
+                    <td>性別：</td>
+                    <td><input type="radio" name="gender" value="男">男<br>
+                        <input type="radio" name="gender" value="女">女
+                
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">個人聯絡方式</td>
+                    <td>通訊地址：</td>
+                    <td>
+                        <select name="city" id="city">
+                            <option >台北市</option>
+                            <option >新北市</option>
+                            <option >桃園市</option>
+                            <option >台南市</option>
+                            <option >高雄市</option>
+                            <option >新竹縣</option>
+                            <option >苗栗縣</option>
+                            <option >彰化縣</option>
+                            <option >南投縣</option>
+                            <option >雲林縣</option>
+                            <option >嘉義縣</option>
+                            <option >屏東縣</option>
+                            <option >宜蘭縣</option>
+                            <option >花蓮縣</option>
+                            <option >台東縣</option>
+                            <option >澎湖縣</option>
+                            <option >連江縣</option>
+                            <option >基隆市</option>
+                            <option >新竹市</option>
+                            <option >嘉義市</option>
+                        </select><br><br>
+                        <input type="text" name="username"style="width: 300px;"></td>
+                </tr>
+                <tr>
+                    <td>連絡電話：</td>
+                    <td> <input type="text" name="phone" ></td>
+                </tr>
+
+
+            </table>
+            <div class="btn1">
+                <input type="submit" value="送出" class="button">
+            </div>
+            <div class="btn2">
+                <input type="reset" value="取消"class="button">
+            </div>
+            
+        </div>
     </main>
     <iframe src="../page/nav.html" id="navBar" frameborder="0" scrolling="no"></iframe>
 </body>
