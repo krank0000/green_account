@@ -1,22 +1,10 @@
 *{
     box-sizing: border-box;
 }
-body{
-    background-color: rgba(61, 114, 61, 0.955);
-    font-family:NSimSun;
-    font-size: 20px;
-}
-#title{
-    position: absolute;
-    color: white;
-    text-align: center;
-    writing-mode: vertical-lr;
-    top: 10%;
-    font-size: 40px;
 
-}
+
 .bigpic{
-    position: relative;
+    position: relativ;
 }
 .subtitle{
     position: absolute;
@@ -81,6 +69,20 @@ body{
     right: 5%;
 }
 
+.no2 p{
+    position: absolute;
+    font-size: 25px;
+    top: 46%;
+    right: 15%;
+    font-weight: bold;
+}
+.pic2 img{
+    position: absolute;
+    width: 100px;
+    left: 15%;
+    top: 13%;
+    
+}
 .pic3{
     position: absolute;
     border: solid 7px green;
@@ -91,6 +93,22 @@ body{
     top: 60%;
     left: 5%;
 }
+.pic3 img{
+    position: absolute;
+    width: 100px;
+    left: 15%;
+    top: 13%;
+    
+}
+.no3 p{
+    position: absolute;
+    font-size: 25px;
+    top: 86%;
+    left: 15%;
+    font-weight: bold;
+}
+
+
 
 
 .pic4{
@@ -102,6 +120,20 @@ body{
     height: 160px;
     top: 60%;
     right: 5%;
+}
+.pic4 img{
+    position: absolute;
+    width: 100px;
+    left: 15%;
+    top: 13%;
+    
+}
+.no4 p{
+    position: absolute;
+    font-size: 25px;
+    top: 86%;
+    right: 15%;
+    font-weight: bold;
 }
 
 
