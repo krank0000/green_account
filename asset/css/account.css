@@ -84,7 +84,7 @@ select{
 #date_Range{
     border-radius: 15px;
     background-color: #FFFFCE;
-    position: absolute; top: 280px; left: 730px;
+    position: relative; top: 30px; left: 720px;
     width: 560px; height: 100px;
     display: flex;
 }
@@ -117,7 +117,7 @@ select{
 #data_record{
     border-radius: 15px;
     background-color: #FFFFCE;
-    position: absolute; top: 280px; left: 10px;
+    position: relative; top: -650px; left: 0px;
     width: 680px; height: auto;
     padding: 30px 10px 30px 10px;
     font-family: "微軟正黑體";
@@ -169,7 +169,7 @@ select{
 #data_chart{
     border-radius: 15px;
     background-color: #FFFFCE;
-    position: absolute; top: 400px; left: 730px;
+    position: relative; top: 70px; left: 720px;
     width: 560px; height: 580px;
     display: flex;
 }

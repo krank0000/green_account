@@ -6,6 +6,7 @@
 .goods_aera{
     display: flex;
     width: 1350px;
+    margin-top: 20px;
 }
 
 .goods{
@@ -13,7 +14,6 @@
     text-align: center;
     border: white 2px solid;
     border-radius: 20px;
-
 }
 
 .goods p{
@@ -39,7 +39,7 @@
 }
 
 .goods_btn:hover{
-    transform: scale(1.1,1.1);
+    transform: scale(1.2,1.2);
     transition: all 0.5s ease-out;
     background-color: tomato;
     color: white;
@@ -52,4 +52,16 @@
     border-radius: 20px;
     background-color: #3c7058;
 
+}
+
+/***/
+#have{
+    position: relative;top: 80px;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+#have p{
+    display: inline;
 }
