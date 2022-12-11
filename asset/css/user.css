@@ -1,0 +1,65 @@
+*{
+    color: black;
+}
+
+#main_title h1{
+    position: relative;
+    top: 85px; left: -35px;
+    color: white;
+}
+.big{
+    position: absolute;
+    top: 150px;
+    left: 400px;
+   
+}
+
+
+
+table{
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    padding: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+   
+  }
+  tr{
+    border: 1px solid ;
+  }
+  td{
+    
+    border: 1px solid #29b38e;
+    padding: 10px 30px;
+    background-color: lightyellow;
+    color: black;
+  }
+  .btn1{
+    position: absolute;
+    left:21px ;
+  }
+  .btn2{
+    position: absolute;
+    right:21px ;
+  }
+.button{
+    font-size: 20px;
+   
+   width:120px;
+   height:40px;
+   border: none;
+   border-radius: 10px;
+   background-color:lightyellow;
+}
+
+.btn1 :hover{
+    
+    background-color: rgb(137, 229, 134);
+    transition: 1s;
+}
+.btn2 :hover{
+    
+    background-color: rgb(137, 229, 134);
+    transition: 1s;
+}
