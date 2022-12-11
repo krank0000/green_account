@@ -1,0 +1,23 @@
+#main_title h1{
+    position: relative;
+    top: 85px; left: -35px;
+    color: white;
+}
+
+.earth img{
+    position: absolute;
+    left: 35%;
+    right: 30%;
+    top: 20%;
+    width: 500px;
+    animation: move 45s infinite;
+}
+
+@keyframes move{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
