@@ -2,6 +2,7 @@ body {
     background-color: #0b995e;
     font-family: NSimSun;
     padding: 30px 30px 30px 30px;
+    margin-bottom: 50px;
 }
 
 #navBar {
@@ -14,7 +15,7 @@ body {
 
 
 main{
-    height: 1000px;
+    height: auto;
 }
 
 #main_title{

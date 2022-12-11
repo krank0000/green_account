@@ -12,7 +12,6 @@
         @import url(../asset/js/account.js);
 
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
@@ -119,23 +118,30 @@
                     </div>
                 </section>
                 <section id="data_chart">
-                    <div style="width: 800px;">
-                        <canvas id="acquisitions"></canvas>
+                    <div id="chart_title">
+                        <p>顯示圖表</p>
                     </div>
-                    <script type="module" src="acquisitions.js"></script>
+                    <div id="data_chart_show">
+                        
+                    </div>
                 </section>
 
                 <div id="today">
                     <p>本日消費金額：</p>
-                    <p>500</p>
-                    <p>元 碳排量：</p>
-                    <p>460</p>
-                    <p>g 碳排量指標 </p>
-                    <p>普通</p>
-                    <button >
-                        已省下碳排量 <br>
-                        500
-                    </button>
+                        <p>500</p>
+                        <p>元 碳排量：</p>
+                        <p>460</p>
+                        <p>g 碳排量指標 </p>
+                        <p>普通</p>
+                        <button type="submit" onclick="show()">
+                            已省下碳排量 <br>
+                            500
+                        </button>
+                    <script>
+                        function show(){
+                            window.prompt("輸入贈與人email")
+                        }
+                    </script>
                 </div>
 
             </div>

@@ -2,6 +2,11 @@
     color: black;
 }
 
+button:hover{
+    transform: scale(1.1,1.1);
+    transition: all 1s ease-out;
+}
+
 #main_title h1{
     position: relative;
     top: 85px; left: -35px;
@@ -71,6 +76,7 @@ select{
     background-color: #0b995e;
     border-radius: 5px;
     color: white;
+    border-color: #0b995e;
 }
 
 /****/
@@ -103,6 +109,7 @@ select{
     margin-top: 25px;
     background-color: #0b995e;
     color: white;
+    border-color: #0b995e;
 }
 
 /***/
@@ -163,8 +170,30 @@ select{
     border-radius: 15px;
     background-color: #FFFFCE;
     position: absolute; top: 400px; left: 730px;
-    width: 560px; height: 500px;
+    width: 560px; height: 580px;
     display: flex;
+}
+
+#chart_title{
+    display: flex;
+    font-size: 30px;
+    letter-spacing: 2px;
+    width: 400px; height: 40px;
+    position: relative;top: 20px;left: 80px;
+    border-bottom: black 2px solid;
+
+}
+
+#chart_title p{
+    margin: auto;
+    font-family: "微軟正黑體";
+}
+
+#data_chart_show{
+    position: absolute;
+    top: 80px;left: 55px;
+    width: 450px; height: 450px;
+    border-radius: 10px;
 }
 
 /****/
@@ -177,9 +206,8 @@ select{
     display: flex;
     white-space:nowrap;
     padding: 20px;
-
-
 }
+
 
 #today p{
     color: white;
@@ -197,3 +225,4 @@ select{
     color: white;
     font-size: 15px;
 }
+
