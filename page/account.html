@@ -10,7 +10,9 @@
         @import url(../asset/css/nav.css);
         @import url(../asset/css/account.css);
         @import url(../asset/js/account.js);
+
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
@@ -23,12 +25,36 @@
                     <h2>日期 ：<input type="date" id="add_date"></h2><br>
                     <select name="type" id="add_type">
                         <option value="" disabled selected hidden>類別</option>
-                        <option value="vegetable">蔬菜</option>
-                        <option value="meat">肉類</option>
-                        <option value="milk">乳製品</option>
+                        <option value="Food">食</option>
+                        <option value="Clothing">衣</option>
+                        <option value="Housing">住</option>
+                        <option value="Transportation">行</option>
+                        <option value="Other">其他</option>
+                    </select>
+                    <select name="type" id="add_type_detail">
+                        <option value="" disabled selected hidden>細項</option>
+                        <option value="Food_1">素食</option>
+                        <option value="Food_2">非素食</option>
+                        <option value="Transportation_1">自駕</option>
+                        <option value="Transportation_2">捷運</option>
+                        <option value="Transportation_3">公車</option>
+                        <option value="Transportation_4">鐵路</option>
+                        <option value="Transportation_5">長程飛機</option>
+                        <option value="Transportation_6">短程飛機</option>
+                        <option value="Other_1">具有綠色標章</option>
+                        <option value="Other_2">非綠色標章</option>
                     </select>
                     <input type="number" id="add_money" placeholder="$ 金額">
-                    <input type="text" id="add_remark" placeholder="備註">
+                    <select name="type" id="add_shop">
+                        <option value="" disabled selected hidden>店家</option>
+                        <option value="">獨立商店</option>
+                        <option value="">連鎖商店</option>
+                        <option value="">便利商店_負碳商品專區</option>
+                        <option value="">便利商店_一般</option>
+                        <option value="">綠色商店</option>
+                        <option value="">其他</option>
+                    </select>
+                    <input type="number" id="add_unit" placeholder="單位">
                     <button type="submit" id="add_btn">新增</button>
                 </form>
             </div>
@@ -43,11 +69,13 @@
                         <caption>2021/12/25(日)</caption>
                         <tr>
                             <td>奶茶</td>
+                            <td>店家名+單位</td>
                             <td>金額:45元</td>
                             <td>碳足跡:140g</td>
                         </tr>
                         <tr>
                             <td>三明治</td>
+                            <td>店家名+單位</td>
                             <td>金額:25元</td>
                             <td>碳足跡:100g</td>
                         </tr>
@@ -56,11 +84,13 @@
                         <caption>2021/12/26(一)</caption>
                         <tr>
                             <td>紅茶</td>
+                            <td>店家名+單位</td>
                             <td>金額:45元</td>
                             <td>碳足跡:120g</td>
                         </tr>
                         <tr>
                             <td>三明治</td>
+                            <td>店家名+單位</td>
                             <td>金額:25元</td>
                             <td>碳足跡:100g</td>
                         </tr>
@@ -68,9 +98,12 @@
                     <div id="record_sum" >
                         <table>
                             <tr>
-                                <td>總計</td>
-                                <td>金額:120元</td>
-                                <td>碳足跡:460g</td>
+                                <td>總計　</td>
+                                <td>金額：　</td>
+                                <td>120</td>
+                                <td>元　碳足跡：　</td>
+                                <td id="record_sum_g">460</td>
+                                <td>　g</td>
                             </tr>
                         </table>
                     </div>
@@ -85,6 +118,26 @@
                         </form>
                     </div>
                 </section>
+                <section id="data_chart">
+                    <div style="width: 800px;">
+                        <canvas id="acquisitions"></canvas>
+                    </div>
+                    <script type="module" src="acquisitions.js"></script>
+                </section>
+
+                <div id="today">
+                    <p>本日消費金額：</p>
+                    <p>500</p>
+                    <p>元 碳排量：</p>
+                    <p>460</p>
+                    <p>g 碳排量指標 </p>
+                    <p>普通</p>
+                    <button >
+                        已省下碳排量 <br>
+                        500
+                    </button>
+                </div>
+
             </div>
         </aside>
     </main>

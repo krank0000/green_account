@@ -10,9 +10,9 @@
 
 #add{
     border-radius: 15px;
-    background-color: #FFFFCE;
+    background-color: #f8ffbd;
     position: relative;
-    padding: 10px 100px 20px 100px;
+    padding: 10px 60px 20px 60px;
 }
 
 h2{
@@ -37,27 +37,31 @@ input{
     text-align: center;
 }
 
-#add_type{
+select{
     color: black;
-    font-size: 25px;letter-spacing: 5px;
+    font-size: 25px;letter-spacing: 3px;
     text-align: center;
-    height: 50px;
+    height: 50px; width: auto;
     position: relative;top: -20px;
-    padding: 0 15px 0 15px;
+    padding: 0 5px 0 5px;
 }
 
 #add_money{
-    position: relative;top: -20px;left: 10px;
+    position: relative;top: -20px;
     height: 45px;width: 220px;
     text-align: center;
-    font-size: 25px;letter-spacing: 5px;
+    font-size: 25px;letter-spacing: 5px;left: 10px;
 }
 
-#add_remark{
+#add_unit{
     position: relative;top: -20px;left: 20px;
-    height: 45px;width: 300px;
+    height: 45px;width: 100px;
     text-align: center;
-    font-size: 25px;letter-spacing: 5px;
+    font-size: 25px;
+}
+
+#add_shop{
+    position: relative;top: -20px;left: 20px;
 }
 
 #add_btn{
@@ -69,12 +73,12 @@ input{
     color: white;
 }
 
-
+/****/
 
 #date_Range{
     border-radius: 15px;
     background-color: #FFFFCE;
-    position: absolute; top: 250px; left: 730px;
+    position: absolute; top: 280px; left: 730px;
     width: 560px; height: 100px;
     display: flex;
 }
@@ -101,10 +105,12 @@ input{
     color: white;
 }
 
+/***/
+
 #data_record{
     border-radius: 15px;
     background-color: #FFFFCE;
-    position: absolute; top: 250px; left: 10px;
+    position: absolute; top: 280px; left: 10px;
     width: 680px; height: auto;
     padding: 30px 10px 30px 10px;
     font-family: "微軟正黑體";
@@ -142,4 +148,52 @@ input{
     font-size: 25px;
     padding-top: 10px;
     border-top: black 2px solid;
+}
+
+#record_sum_g{
+    background-color: #cc3434;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+/****/
+
+#data_chart{
+    border-radius: 15px;
+    background-color: #FFFFCE;
+    position: absolute; top: 400px; left: 730px;
+    width: 560px; height: 500px;
+    display: flex;
+}
+
+/****/
+
+#today{
+    border-radius: 10px;
+    background-color: #85b976;
+    position: absolute; top: 25px; left: 635px;
+    width: 600px; height: 50px;
+    display: flex;
+    white-space:nowrap;
+    padding: 20px;
+
+
+}
+
+#today p{
+    color: white;
+    font-size: 20px;
+    font-family: "微軟正黑體";
+    position: relative; top: -10px;
+}
+
+#today button{
+    width: auto;height: 50px;
+    position: relative; left: 10px;
+    border-radius: 10px;
+    border: #cc3434;
+    background-color: #cc3434;
+    color: white;
+    font-size: 15px;
 }
