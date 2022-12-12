@@ -23,17 +23,18 @@ iframe{
     border-radius: 20px;
     border: white 5px solid;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .shop img{
     position: relative;
-    left: -1000px;top: 20px;
+    left: 40px;top: 20px;
     width: 10%;
 }
 
 .map_detail{
     position: relative;
-    left: 200px;top: -5px;
+    left: 200px;top: -130px;
     width: 1000px;
     font-size: 20px;
 }
