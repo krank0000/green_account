@@ -23,12 +23,12 @@
     left: 10px;
 }
 
-a:link{
+#title a:link{
     text-decoration: none;
 
 }
 
-a h1{
+#title a h1{
     position: relative;
     left: 20px; 
     width: 190px;
@@ -38,19 +38,19 @@ a h1{
 }
 
 
-a h1:hover{
+#title a h1:hover{
     transform: scale(1.1,1.1);
     transition: all 1s ease-out;
 }
 
-img{
+#nav_img{
     position: absolute;
     float: right;
     width: 140px;
     left: 1340px;top: 0px;
 }
 
-img:hover{
+#nav_img:hover{
     transform: scale(1.1,1.1);
     transition: all 1s ease-out;
 }

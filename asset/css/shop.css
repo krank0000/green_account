@@ -3,30 +3,35 @@
     top: 110px; left: -35px;
 }
 
-.goods_aera{
+section.goods_aera{
     display: flex;
-    width: 1350px;
+    width: 1250px;
     margin-top: 20px;
+    background-color: rgb(53, 122, 105);
+    
 }
 
-.goods{
-    width: 280px;height: 350px;
+div.goods{
+    width: 250px;height: 350px;
     text-align: center;
     border: white 2px solid;
     border-radius: 20px;
+    overflow: hidden;
+    display: run-in;
 }
 
-.goods p{
+div.goods p{
     font-family: "微軟正黑體";
     font-size: 25px;
 
 }
 
-.goods_img{
+div.goods img{
     width: 200px;height: 200px;
-    margin: auto;
+    
     border-radius: 10px;
     position: relative;top: -15px;
+
 }
 
 .goods_btn{
@@ -56,7 +61,7 @@
 
 /***/
 #have{
-    position: relative;top: 80px;
+    position: relative;top: 10px;
     text-align: center;
     font-size: 50px;
     padding-bottom: 50px;
