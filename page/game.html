@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>存碳養綠</title>
+    <title>綠色帳本</title>
     <style>
         @import url(../asset/css/main.css);
         @import url(../asset/css/nav.css);
         @import url(../asset/css/game.css);
     </style>
+    <link rel="stylesheet" href="../asset/css/picturesbook.css">
+    <link rel="stylesheet" href="../asset/css/question.css">
 </head>
 <body>
     <main>
@@ -50,32 +52,115 @@
                 </div>
     
                 <div class="press">
-                    <div class="press1">
-                        <a href="../page/picturesbook.html" target="_blank">
-                            圖鑑
-                        </a>
+                    <div id="pcturebook">
+                        <input type="button" class="btn1" value="圖鑑">
                     </div>
-                    <div class="press1">
-                        <a href="" target="_blank" style="font-size: 12px;">
-                            環保小問題
-                        </a>
+
+                    <dialog id="infoModal">
+                        <div class="bigpic">
+                            <div class="picbody">
+                                <div class="sub">
+                                    <img src="../asset/img/leaf.png" >
+                                    <div class="subtitle">
+                                        <p>圖鑑</p>
+                                    </div>
+                        
+                                </div>
+                                <div class="all">
+                                    <div class="no1">
+                                        <div class="pic1">
+                                            <img src="../asset/img/seed.png" >
+                                            
+                                        </div>
+                                        <p>一般種子</p>
+                                    </div>
+                        
+                                    <div class="no1">
+                                        <div class="pic2">
+                                            <img src="../asset/img/lock.png" >
+                                        </div>
+                                        <p>未解鎖</p>
+                                    </div>
+                                    <div class="no1">
+                                        <div class="pic3">
+                                            <img src="../asset/img/lock.png" >
+                                        </div>
+                                        <p>未解鎖</p>
+                                    </div>
+                                    <div class="no1">
+                                        <div class="pic4">
+                                            <img src="../asset/img/lock.png" >
+                                        </div>
+                                        <p>未解鎖</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="close">X</button>
+                    </dialog>
+
+                    <div id="question">
+                        <input type="button" class="btn1" value="環保&#010;小問題"  >
                     </div>
-                    <div class="press1">
-                        <a href="" target="_blank">
-                            簽到
-                        </a>
+                    <dialog id="questionModal">
+                        
+                       <p style="color: black;">問題</p>
+                        <button class="cls" onclick="questionModal.close()">X</button>
+                    </dialog>
+                    <div id="check">
+                        <input type="button" class="btn1" value="簽到">
                     </div>
-                    <div class="press1">
-                        <a href="" target="_blank">
-                            道具
-                        </a>
+                    <dialog id="checkModal">
+                        
+                        <p style="color: black;">簽到</p>
+                         <button class="cls" onclick="checkModal.close()">X</button>
+                     </dialog>
+                    <div id="item">
+                        <input type="button" class="btn1" value="道具">
                     </div>
+                    <dialog id="itemModal">
+                        
+                        <p style="color: black;">道具</p>
+                         <button class="cls" onclick="itemModal.close()">X</button>
+                     </dialog>
                 </div>
     
             </div>
         </div>
     </main>
-    <footer></footer>
+    <script>
+        let btn=document.querySelector("#pcturebook");
+        let btn2=document.querySelector("#question");
+        let btn3=document.querySelector("#check");
+        let btn4=document.querySelector("#item");
+
+        let infoModal=document.querySelector("#infoModal");
+        let questionModal=document.querySelector("#questionModal");
+        let checkModal=document.querySelector("#checkModal");
+        let itemModal=document.querySelector("#itemModal");
+       
+        let close=document.querySelector("#close");
+        
+
+        btn.addEventListener("click", function(){
+        infoModal.showModal();
+        })
+        btn2.addEventListener("click", function(){
+        questionModal.showModal();
+        })
+        btn3.addEventListener("click", function(){
+        checkModal.showModal();
+        })
+        btn4.addEventListener("click", function(){
+        itemModal.showModal();
+        })
+
+        close.addEventListener("click", function(){
+        infoModal.close();  
+        })
+        
+      
+    </script>
     <iframe src="../page/nav.html" id="navBar" frameborder="0" scrolling="no"></iframe>
 </body>
 </html>
