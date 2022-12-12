@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
 }
@@ -106,6 +107,7 @@
     position: absolute;
     bottom: 150px;
     transform: rotate(30deg);
+    transition: 1s;
 }
 a{
     text-decoration: none;
@@ -118,19 +120,20 @@ a{
     top:30%;
    
 }
-
-.press .press1{
-    text-align: center;
-    background-color: green;
-    border-radius: 5px;
-    margin: 10px;
-    height: 65px;
-    width: 65px;
-    line-height: 65px;
-    
+.btn1{
+    background-color: rgba(13, 83, 13, 0.911);
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    margin: 5px;
 }
 
-.press .press1:hover{
+
+.btn1:hover{
     font-size: 20px;
     transition: 0.5s;
+    background-color: bisque;
+    transition: 1s;
+    color: rgba(13, 83, 13, 0.911);
 }
