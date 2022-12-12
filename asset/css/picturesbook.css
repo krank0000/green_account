@@ -132,6 +132,9 @@ dialog::backdrop {
 }
 
 #close{
+  position: absolute;
+  top: 30px;
+  right: 30px;
   background-color: black;
   border: 1px solid;
   width: 50px;
