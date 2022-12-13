@@ -45,3 +45,21 @@ footer{
     height: 50px; width: 100%;
 
 }
+
+#top{
+    position: fixed;
+    top: 0;
+}
+
+#top_btn{
+    position: fixed;
+    top: 600px; left: 1400px;
+    width: 6%;
+    opacity: 0.5;
+}
+
+#top_btn:hover{
+    animation: rotate 1.5s linear infinite ;
+    transform: 0.5s;
+    opacity: 1;
+}
