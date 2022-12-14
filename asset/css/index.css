@@ -21,7 +21,7 @@
     width: 850px;
     animation: move 20s linear infinite;
     position: relative;
-    top: 60px;left: 80px;
+    top: 60px;left: 110px;
 }
 
 @keyframes move{
@@ -152,6 +152,8 @@
     border: 1px solid gainsboro ;
     background-color:transparent;
     font-size: 15px;
+    padding-left: 20px;
+    
   }
   .btn{
     background-color: transparent;
