@@ -50,3 +50,44 @@
     transform: scale(1.1,1.1);
     transition: all 1s ease-out;
   }
+
+  .signin{
+    z-index: 2;
+    position: absolute;
+    position: fixed;
+    width: 150px;
+    right: 50px;
+    height: 200px;
+    top: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: rgb(12, 80, 36);
+    border-radius: 30px;
+    border: none;
+    
+  }
+  .signmid{
+    margin-top: 10px;
+  }
+  .signcontent input{
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+  }
+  .signbtn{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+  }
+  .signbtn input{
+    color: rgb(12, 80, 36) ;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
