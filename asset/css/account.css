@@ -117,10 +117,11 @@ select{
 #data_record{
     border-radius: 15px;
     background-color: #FFFFCE;
-    position: relative; top: -650px; left: 0px;
-    width: 680px; height: auto;
+    position: absolute; top: 250px; left: 0px;
+    width: 680px; height: 760px;
     padding: 30px 10px 30px 10px;
     font-family: "微軟正黑體";
+    overflow: hidden;
 }
 
 #record_title{
@@ -151,7 +152,10 @@ select{
 }
 
 #record_sum{
+    position: relative;
+    top: -50px;
     margin: 30px 60px 0px 60px;
+    width: 580px;
     font-size: 25px;
     padding-top: 10px;
     border-top: black 2px solid;
@@ -170,7 +174,7 @@ select{
     border-radius: 15px;
     background-color: #FFFFCE;
     position: relative; top: 70px; left: 720px;
-    width: 560px; height: 580px;
+    width: 560px; height: 680px;
     display: flex;
 }
 
@@ -226,3 +230,8 @@ select{
     font-size: 15px;
 }
 
+#dataRecord {
+    width: 680px;height: 600px;
+    position: relative;
+    left: -10px;
+}
