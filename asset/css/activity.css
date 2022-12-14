@@ -27,42 +27,8 @@
     animation: flashing 0.8s linear infinite alternate;
 }
 
-/**
+/******/
 
-.ad_area{
-    width: 98%; height: 500px;
-    position: relative; top: 50px;left: 10px;
-    display: flex;
-    margin-bottom: 45px;
-}
-
-.ad{
-    height: 100%; width: 350px;
-    overflow: hidden;
-    border-radius: 20px;
-    border: white 3px solid;
-    margin-left: 45px;
-    box-shadow: 12px 12px 7px rgba(255, 255, 255, 0.479);
-}
-
-.ad_txt{
-    text-align: center;
-    height: 100%; width: 100%;
-    padding-top: 40px;
-    font-size: 20px;
-}
-.ad_img img{
-    height: 100%; width: 350px;
-    position: relative; top: -540px;
-}
-
-.ad_img img:hover{
-    opacity: 0.08;
-    transform: scale(1.2,1.2);
-    transition: all 1.2s ease-out;
-}
-
-****/
 
 #app_area{
     height: 300px;width: 100%;
@@ -102,6 +68,50 @@
     opacity: 1;
 }
 
+/********/
+
+#activity_title{
+    width: 95%; height: 80px;
+    position: relative;top: 115px;
+    text-align: center; 
+    border-top: rgba(255, 255, 255, 0.5) 2px solid;
+    border-bottom: rgba(255, 255, 255, 0.472) 2px solid;
+}
+
+#activity_title p{
+    font-size: 32px;
+    letter-spacing: 10px;
+    text-shadow:    0 0 10px #ffffff,
+                    0 0 20px #ffffff,
+                    0 0 50px #ffffff,
+                    0 0 100px #ffffff,
+                    0 0 200px #ffffff;
+    animation: flashing 1s linear infinite alternate;
+
+}
+#activity_area{
+    width: 94%; height: auto;
+    position: absolute;top: 550px;
+    padding-bottom: 80px;
+}
+.activity{
+    border: white 3px solid;
+    border-radius: 20px;
+    padding:  10px 100px 10px 100px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    height: 120px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.activity:hover{
+    box-shadow: white 0 0 30px;
+    transition: all 0.4s ease-out;
+    background-color: rgb(45, 105, 77);
+    height: 200px;
+}
 
 
 /*****/

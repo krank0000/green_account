@@ -142,7 +142,7 @@ select{
 
 .record_content{
     margin: 10px 60px;
-    font-size: 20px;
+    font-size: 15px;
     width: 560px;
     line-height: 30px;
 }
@@ -233,5 +233,5 @@ select{
 #dataRecord {
     width: 680px;height: 600px;
     position: relative;
-    left: -10px;
+    left: -10px;top: 10px;
 }

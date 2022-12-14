@@ -7,7 +7,10 @@ section.goods_aera{
     display: flex;
     width: 1250px;
     margin-top: 20px;
+    align-items: center;
+    height: auto;
 }
+
 
 div.goods{
     width: 250px;height: 350px;

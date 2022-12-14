@@ -20,9 +20,9 @@
         </aside>
         <aside id="main_body">
             <div id="add">
-                <form action="">
+                <form action=""  name="myForm">
                     <h2>日期 ：<input type="date" id="add_date"></h2><br>
-                    <select name="type" id="add_type">
+                    <select name="type" id="add_type" onChange="renew(this.selectedIndex);">
                         <option value="" disabled selected hidden>類別</option>
                         <option value="Food">食</option>
                         <option value="Clothing">衣</option>
@@ -30,8 +30,9 @@
                         <option value="Transportation">行</option>
                         <option value="Other">其他</option>
                     </select>
-                    <select name="type" id="add_type_detail">
+                    <select name="typeDetail" id="add_type_detail">
                         <option value="" disabled selected hidden>細項</option>
+                        <!----
                         <option value="Food_1">素食</option>
                         <option value="Food_2">非素食</option>
                         <option value="Transportation_1">自駕</option>
@@ -42,6 +43,7 @@
                         <option value="Transportation_6">短程飛機</option>
                         <option value="Other_1">具有綠色標章</option>
                         <option value="Other_2">非綠色標章</option>
+                         --->
                     </select>
                     <input type="number" id="add_money" placeholder="$ 金額">
                     <select name="type" id="add_shop">
@@ -52,9 +54,31 @@
                         <option value="">便利商店_一般</option>
                         <option value="">綠色商店</option>
                         <option value="">其他</option>
+                       
                     </select>
+                    <script>
+                        department=new Array();
+                        department[0]=[];	
+                        department[1]=["素食", "非素食"];	
+                        department[2]=[];
+                        department[3]=[];
+                        department[4]=["自駕", "捷運", "公車", "鐵路", "長程飛機", "短程飛機"];
+                        department[5]=["具有綠色標章", "非綠色標章"];
+
+                        function renew(index){
+                            for(var i=0;i<department[index].length;i++)
+                                document.myForm.typeDetail.options[i]=new Option(department[index][i], department[index][i]);	// 設定新選項
+                            document.myForm.typeDetail.length=department[index].length;	// 刪除多餘的選項
+                        }
+                    </script>
                     <input type="number" id="add_unit" placeholder="單位">
-                    <button type="submit" id="add_btn">新增</button>
+                    <button type="submit" id="add_btn" onclick="addFunction()">新增</button>
+                    <script>
+                        function addFunction()
+                        {
+                            alert("此紀錄碳足跡量已超標!! \n 未來您的孫子沒有家了哭哭");
+                        }
+                        </script>
                 </form>
             </div>
             <div id="today">
