@@ -3,7 +3,7 @@
 }
 
 #Nav{
-    background-color: #0b995e;
+    background-color: #3E885B;
     position: absolute;
     top: 0;
     width: 100%;
@@ -16,7 +16,7 @@
 
 #title{
     width: 100%;
-    background-color: #0b995e;
+    background-color: #3E885B;
     padding: 10px 5px 5px 5px;
     display: flex;
     position: relative;

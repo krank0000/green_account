@@ -15,7 +15,7 @@ button:hover{
 
 #add{
     border-radius: 15px;
-    background-color: #f8ffbd;
+    background-color: #C0D7BB;
     position: relative;
     padding: 10px 60px 20px 60px;
 }
@@ -83,7 +83,7 @@ select{
 
 #date_Range{
     border-radius: 15px;
-    background-color: #FFFFCE;
+    background-color: #85BDA6;
     position: relative; top: 30px; left: 720px;
     width: 560px; height: 100px;
     display: flex;
@@ -116,8 +116,8 @@ select{
 
 #data_record{
     border-radius: 15px;
-    background-color: #FFFFCE;
-    position: absolute; top: 250px; left: 0px;
+    background-color: #85BDA6;
+    position: absolute; top: 250px; left: 10px;
     width: 680px; height: 760px;
     padding: 30px 10px 30px 10px;
     font-family: "微軟正黑體";
@@ -172,7 +172,7 @@ select{
 
 #data_chart{
     border-radius: 15px;
-    background-color: #FFFFCE;
+    background-color: #85BDA6;
     position: relative; top: 70px; left: 720px;
     width: 560px; height: 680px;
     display: flex;
@@ -204,7 +204,7 @@ select{
 
 #today{
     border-radius: 10px;
-    background-color: #85b976;
+    background-color: #8abd85;
     position: absolute; top: 25px; left: 635px;
     width: 600px; height: 50px;
     display: flex;
