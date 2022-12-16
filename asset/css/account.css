@@ -13,6 +13,11 @@ button:hover{
     color: white;
 }
 
+main{
+    height: 1200px;
+    overflow: hidden;
+}
+
 #add{
     border-radius: 15px;
     background-color: #C0D7BB;
@@ -33,6 +38,8 @@ form{
 input{
     font-size: 25px;
     color: black;
+    border-radius: 15px;
+    border: 0px;
 }
 
 #add_date{
@@ -49,6 +56,8 @@ select{
     height: 50px; width: auto;
     position: relative;top: -20px;
     padding: 0 5px 0 5px;
+    border-radius: 15px;
+    border: 0px;
 }
 
 #add_money{
@@ -74,10 +83,23 @@ select{
     height: 50px;width: 90px;
     font-size: 25px;letter-spacing: 5px;
     background-color: #0b995e;
-    border-radius: 5px;
+    border-radius: 15px;
     color: white;
-    border-color: #0b995e;
+    border: 0;
 }
+
+#add_buy{
+    position: relative;top: 0px;
+}
+
+#productName{
+    font-size: 25px;
+    height: 45px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+
 
 /****/
 
@@ -117,7 +139,7 @@ select{
 #data_record{
     border-radius: 15px;
     background-color: #85BDA6;
-    position: absolute; top: 250px; left: 10px;
+    position: relative; top: -750px; left: 0px;
     width: 680px; height: 760px;
     padding: 30px 10px 30px 10px;
     font-family: "微軟正黑體";
@@ -145,15 +167,31 @@ select{
     font-size: 15px;
     width: 560px;
     line-height: 30px;
+    
 }
 
 .record_content caption{
-    float: left;
+    position: relative;
+    left: -200px;
 }
+
+.change{
+    position: relative;
+    left: 400px;
+    background-color: rgb(62, 136, 91);
+    border: 0px;
+    border-radius: 3px;
+    color: rgb(223, 223, 223);
+}
+
+.change:hover{
+    background-color: #cc3434;
+}
+
 
 #record_sum{
     position: relative;
-    top: -50px;
+    top: -870px;
     margin: 30px 60px 0px 60px;
     width: 580px;
     font-size: 25px;
@@ -167,6 +205,9 @@ select{
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
 }
+
+
+
 
 /****/
 

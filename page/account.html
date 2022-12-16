@@ -20,7 +20,7 @@
         </aside>
         <aside id="main_body">
             <div id="add">
-                <form action=""  name="myForm">
+                <form method="post"  name="myForm">
                     <h2>日期 ：<input type="date" id="add_date"></h2><br>
                     <select name="type" id="add_type" onChange="renew(this.selectedIndex);">
                         <option value="" disabled selected hidden>類別</option>
@@ -32,20 +32,8 @@
                     </select>
                     <select name="typeDetail" id="add_type_detail">
                         <option value="" disabled selected hidden>細項</option>
-                        <!----
-                        <option value="Food_1">素食</option>
-                        <option value="Food_2">非素食</option>
-                        <option value="Transportation_1">自駕</option>
-                        <option value="Transportation_2">捷運</option>
-                        <option value="Transportation_3">公車</option>
-                        <option value="Transportation_4">鐵路</option>
-                        <option value="Transportation_5">長程飛機</option>
-                        <option value="Transportation_6">短程飛機</option>
-                        <option value="Other_1">具有綠色標章</option>
-                        <option value="Other_2">非綠色標章</option>
-                         --->
                     </select>
-                    <input type="number" id="add_money" placeholder="$ 金額">
+                    <input type="number" id="add_money" placeholder="$ 金額" min="0">
                     <select name="type" id="add_shop">
                         <option value="" disabled selected hidden>店家</option>
                         <option value="">獨立商店</option>
@@ -61,8 +49,8 @@
                         department[0]=[];	
                         department[1]=["素食", "非素食"];	
                         department[2]=[];
-                        department[3]=[];
-                        department[4]=["自駕", "捷運", "公車", "鐵路", "長程飛機", "短程飛機"];
+                        department[3]=["水電費/月","瓦斯費/月"];
+                        department[4]=["油費","自駕", "捷運", "公車", "鐵路", "長程飛機", "短程飛機"];
                         department[5]=["具有綠色標章", "非綠色標章"];
 
                         function renew(index){
@@ -71,14 +59,19 @@
                             document.myForm.typeDetail.length=department[index].length;	// 刪除多餘的選項
                         }
                     </script>
-                    <input type="number" id="add_unit" placeholder="單位">
-                    <button type="submit" id="add_btn" onclick="addFunction()">新增</button>
+                    <input type="number" id="add_unit" placeholder="單位" min="0" title="行車公里/公車、捷運站數/份數/飛機次數/油公升數">
+                    <button type="submit" id="add_btn" onclick="addFunction()" >新增</button><br>
                     <script>
                         function addFunction()
                         {
-                            alert("此紀錄碳足跡量已超標!! \n 未來您的孫子沒有家了哭哭");
+                            alert("此紀錄碳足跡量已超標!! \n 未來您的孫子沒有家了哭哭 °(°ˊДˋ°) °");
                         }
-                        </script>
+                    </script>
+                    <select name="type" id="add_buy">
+                        <option value="">自行到店</option>
+                        <option value="">網購</option>
+                    </select>
+                    <input type="text" placeholder="品名" id="productName">
                 </form>
             </div>
             <div id="today">
@@ -86,7 +79,7 @@
                     <p>500</p>
                     <p>元 碳排量：</p>
                     <p>460</p>
-                    <p>g 碳排量指標 </p>
+                    <p>kg 碳排量指標 </p>
                     <p>普通</p>
                     <button type="submit" onclick="show()">
                         已省下碳排量 <br>
@@ -94,7 +87,7 @@
                     </button>
                 <script>
                     function show(){
-                        window.prompt("輸入贈與人email")
+                        window.prompt("輸入贈與人會員編號")
                     }
                 </script>
             </div>

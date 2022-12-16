@@ -11,109 +11,41 @@
 </head>
 <body>
     <table class="record_content" border="1">
-        <caption>2021/12/25(日)</caption>
+        <caption>
+            2021/12/25(日)
+            <button class="change" onclick="deleteFunction()">刪除</button>
+        </caption>
         <tr>
+            <td >
+                <input type="checkbox">
+            </td>
+            <td>1.</td>
             <td>奶茶</td>
-            <td>店家名+單位</td>
-            <td>金額:45元</td>
-            <td>碳足跡:140g</td>
+            <td>店家名</td>
+            <td>單位</td>
+            <td>金額：45元</td>
+            <td>碳足跡：140g</td>
         </tr>
         <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>2.</td>
             <td>三明治</td>
-            <td>店家名+單位</td>
-            <td>金額:25元</td>
-            <td>碳足跡:100g</td>
+            <td>店家名</td>
+            <td>單位</td>
+            <td>金額：25元</td>
+            <td>碳足跡：100g</td>
         </tr>
     </table>
-    <table class="record_content" border="1">
-        <caption>2021/12/26(一)</caption>
-        <tr>
-            <td>紅茶</td>
-            <td>店家名+單位</td>
-            <td>金額:45元</td>
-            <td>碳足跡:120g</td>
-        </tr>
-        <tr>
-            <td>三明治</td>
-            <td>店家名+單位</td>
-            <td>金額:25元</td>
-            <td>碳足跡:100g</td>
-        </tr>
-    </table>
-    <table class="record_content" border="1">
-        <caption>2021/12/26(一)</caption>
-        <tr>
-            <td>紅茶</td>
-            <td>店家名+單位</td>
-            <td>金額:45元</td>
-            <td>碳足跡:120g</td>
-        </tr>
-        <tr>
-            <td>三明治</td>
-            <td>店家名+單位</td>
-            <td>金額:25元</td>
-            <td>碳足跡:100g</td>
-        </tr>
-    </table>
-    <table class="record_content" border="1">
-        <caption>2021/12/26(一)</caption>
-        <tr>
-            <td>紅茶</td>
-            <td>店家名+單位</td>
-            <td>金額:45元</td>
-            <td>碳足跡:120g</td>
-        </tr>
-        <tr>
-            <td>三明治</td>
-            <td>店家名+單位</td>
-            <td>金額:25元</td>
-            <td>碳足跡:100g</td>
-        </tr>
-    </table>
-    <table class="record_content" border="1">
-        <caption>2021/12/26(一)</caption>
-        <tr>
-            <td>紅茶</td>
-            <td>店家名+單位</td>
-            <td>金額:45元</td>
-            <td>碳足跡:120g</td>
-        </tr>
-        <tr>
-            <td>三明治</td>
-            <td>店家名+單位</td>
-            <td>金額:25元</td>
-            <td>碳足跡:100g</td>
-        </tr>
-    </table>
-    <table class="record_content" border="1">
-        <caption>2021/12/26(一)</caption>
-        <tr>
-            <td>紅茶</td>
-            <td>店家名+單位</td>
-            <td>金額:45元</td>
-            <td>碳足跡:120g</td>
-        </tr>
-        <tr>
-            <td>三明治</td>
-            <td>店家名+單位</td>
-            <td>金額:25元</td>
-            <td>碳足跡:100g</td>
-        </tr>
-    </table>
-    <table class="record_content" border="1">
-        <caption>2021/12/26(一)</caption>
-        <tr>
-            <td>紅茶</td>
-            <td>店家名+單位</td>
-            <td>金額:45元</td>
-            <td>碳足跡:120g</td>
-        </tr>
-        <tr>
-            <td>三明治</td>
-            <td>店家名+單位</td>
-            <td>金額:25元</td>
-            <td>碳足跡:100g</td>
-        </tr>
-    </table>
+
+    <script>
+        function deleteFunction()
+        {
+            y = confirm("請注意！刪除紀錄將扣除一點！")
+            if(y==true)
+                alert("已扣點 ( ´; ω ; )")
+        }
+    </script>
 </body>
 </html>
