@@ -31,8 +31,9 @@ body{
     background-color: lightgray;
     color: black;
     font-weight: bold;
-    font-size: large;
-    transition: 1s;
+    
+    transform: scale(1.1,1.1);
+    transition: all 1s ease-out;
   }
 
   .infous{
@@ -42,6 +43,6 @@ body{
     margin: 10px;
     background-color: rgb(12, 80, 36);
     width:150px;
-    height: 200px;
+    height:fit-content;
     line-height: 25px;
   }
