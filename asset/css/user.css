@@ -100,3 +100,38 @@ div{
     justify-content: space-between;
     align-items: flex-end;
 }
+
+
+.midpoint{
+  position: relative;
+  display: flex;
+  background-color: rgba(189, 240, 189, 0.733);
+  border-radius: 40px;
+  border:  solid 8px rgb(90, 150, 90);
+  width: 450px;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+}
+#close{
+  position: absolute;
+  top:20px;
+  right: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(90, 150, 90);
+  border: 1px solid rgb(25, 85, 25);
+}
+.pointcontent{
+  margin: 10px 20px;
+  padding:0px 15px ;
+  background-color:  rgba(90, 150, 90, 0.885);
+  border-radius: 10px;
+}
+dialog{
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  border: none;
+}
