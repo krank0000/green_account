@@ -66,14 +66,15 @@ dialog::backdrop {
 }
 
 .all{
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  top: 15%;
-  left: 5%;
-  right: 5%;
-}
+      
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+     
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+  }
 
 #close{
   position: absolute;
@@ -124,11 +125,11 @@ dialog::backdrop {
   border: solid 7px green;
   background-color: rgb(161, 241, 161);
   border-radius: 20%;
-  width:100px ;
-  height: 100px;
+  width:250px ;
+  height: 250px;
   margin: 10px;
 }
 
 .toy1 img{
-  width:70px;
+  width:130px;
 }
