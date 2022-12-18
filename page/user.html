@@ -65,6 +65,52 @@
                                     <button id="poitnbtn">兌換紀錄</button>
                                 </div>
                             </div>
+                            <dialog id="pointhistory">
+                                <div class="bigpoint">
+                                    <div class="midpoint">
+                                        <h2 style="text-align: center; margin-bottom: 0px;">兌換紀錄</h2>
+                                        <button id="close" >X</button>
+                                        <div class="pointcontent">
+                                            <p>2022 / 12 / 18<br>
+                                                16 : 41 <br>
+                                                商品 :  <br>
+                                                點數 : 
+                        
+                                            </p>
+                                            
+                                        </div>
+                                        <div class="pointcontent">
+                                            <p>2022 / 12 / 18<br>
+                                                16 : 41 <br>
+                                                商品 :  <br>
+                                                點數 : 
+                        
+                                            </p>
+                                            
+                                        </div>
+                                        <div class="pointcontent">
+                                            <p>2022 / 12 / 18<br>
+                                                16 : 41 <br>
+                                                商品 :  <br>
+                                                點數 : 
+                        
+                                            </p>
+                                            
+                                        </div>
+                                        <div class="pointcontent">
+                                            <p>2022 / 12 / 18<br>
+                                                16 : 41 <br>
+                                                商品 :  <br>
+                                                點數 : 
+                        
+                                            </p>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </dialog>
                         
                             <div class="btndiv">
                                 <input type="submit" value="確認" class="btn" id="close">
@@ -82,5 +128,18 @@
         </div>
     </main>
     <iframe src="../page/nav.html" id="navBar" frameborder="0" scrolling="no"></iframe>
+
+    <script>
+        let btn = document.querySelector("#poitnbtn")
+        let pointhistory = document.querySelector("#pointhistory")
+        let close = document.querySelector("#close")
+        btn.addEventListener("click",function(){
+            pointhistory.showModal();
+        })
+        close.addEventListener("click",function(){
+            pointhistory.close();
+        })
+
+    </script>
 </body>
 </html>
