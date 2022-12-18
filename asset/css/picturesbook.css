@@ -31,6 +31,17 @@ dialog::backdrop {
   top: -30px;
   left: -50px;
 }
+.picbody1 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(189, 240, 189);
+  border-radius: 40px;
+  border: solid 8px rgb(90, 150, 90);
+  width: 900px;
+  height: 550px;
+  padding: 30px;
+}
+
 .picbody{
   display: flex;
   flex-wrap: wrap;
@@ -63,6 +74,25 @@ dialog::backdrop {
   text-align: center;
   color: black;
   font-weight: bold;
+}
+.all1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+  margin: 20px;
+}
+.all2 {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .all{
