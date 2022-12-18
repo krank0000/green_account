@@ -132,13 +132,14 @@ a{
     border-radius: 20px;
     border: none;
     margin: 5px;
+    cursor: pointer;
 }
 
 
 .btn1:hover{
-    font-size: 20px;
-    transition: 0.5s;
-    background-color: bisque;
-    transition: 1s;
-    color: rgba(13, 83, 13, 0.911);
+   
+    background-color: rgba(13, 83, 13, 0.612);
+    transform: scale(1.2,1.2);
+    transition: all 0.5s ease-out;
+    color: bisque;
 }
