@@ -9,7 +9,7 @@
    
   }
  .cls{
-   
+    cursor: pointer;
     position: absolute;
     top: 30px;
     right: 30px;
@@ -20,33 +20,56 @@
     color: white;
     border-radius: 20px;
     border: none ;
-    }
+}
 
-    .confirm{
-        font-size: 30px;
-        position: absolute;
-        top:380px;
-        background-color:  rgba(13, 83, 13, 0.911);
-        border: none;
-        width: 60%;
-        height: 50px;
-        
-        border-radius: 20px;
-    }
-    .confirmdiv{
-        position: absolute;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        top: 15%;
-        left: 5%;
-        right: 5%;
-    }
-    .confirmdiv :hover{
-        
-        background-color:white;
-        color: rgba(13, 83, 13, 0.911);
-        border: 5px solid rgba(13, 83, 13, 0.911);
-       
+.confirm{
+    font-size: 30px;
+    position: absolute;
+    top:320px;
+    background-color:  rgba(13, 83, 13, 0.911);
+    border: none;
+    width: 60%;
+    height: 50px;
+    
+    border-radius: 20px;
+}
+.confirmdiv{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 15%;
+    left: 5%;
+    right: 5%;
+}
+.confirmdiv :hover{
+    
+    background-color:white;
+    color: rgba(13, 83, 13, 0.911);
+    border: 5px solid rgba(13, 83, 13, 0.911);
+    
 
-    }
+}
+
+.questiondiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.bnt_question{
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+    width: 200px;
+    background-color:rgba(13, 83, 13, 0.386) ;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.question :hover{
+    transform: scale(1.1,1.1);
+    transition: 0.5 ease-out;
+}
