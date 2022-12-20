@@ -82,20 +82,21 @@
     left: 25%;
     top: 250px;
 }
-.seed{
+.seed img{
     position: absolute;
-    background-color: rgb(134, 20, 20);
-    text-align: center;
-    line-height: 40px;
-    width: 80px;
-    height: 80px;
+    
+    
+    
+    width: 150px;
+    
     border-radius: 50%;
-    top: 350px;
-    left: 40%;
+    top: 240px;
+    left: 35%;
     z-index: 1;
     color: white;
     
 }
+
 
 .grass .green {
     position:absolute ;
