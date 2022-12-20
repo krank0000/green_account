@@ -46,7 +46,7 @@
     
                 <div class="grass">
                     <div class="seed">
-                        <p>種子</p>
+                        <a href="https://www.instagram.com/greenbook_1228/" target="_blank"><img src="../asset/img/seed (2).png" alt="種子"></a>
                     </div>
                     <div class="green">
                         .
@@ -71,7 +71,7 @@
                                 <div class="all1">
                                     <div class="no1">
                                         <div class="pic1">
-                                            <img src="../asset/img/cactus.png" >
+                                            <img src="../asset/img/plant (5).png" >
                                             
                                         </div>
                                         <p>仙人掌</p>
@@ -79,43 +79,55 @@
                         
                                     <div class="no1">
                                         <div class="pic1">
-                                            <img src="../asset/img/lock.png" >
+                                            <img src="../asset/img/lock.png" id="lock" >
                                         </div>
                                         <p>未解鎖</p>
                                     </div>
                                     <div class="no1">
                                         <div class="pic1">
-                                            <img src="../asset/img/lock.png" >
+                                            <img src="../asset/img/lock.png"  id="lock">
                                         </div>
                                         <p>未解鎖</p>
                                     </div>
                                     <div class="no1">
                                         <div class="pic1">
-                                            <img src="../asset/img/lock.png" >
+                                            <img src="../asset/img/lock.png"  id="lock">
                                         </div>
                                         <p>未解鎖</p>
                                     </div>
                                     <div class="no1">
                                         <div class="pic1">
-                                            <img src="../asset/img/lock.png" >
+                                            <img src="../asset/img/lock.png"  id="lock">
                                         </div>
                                         <p>未解鎖</p>
                                     </div>
                                     <div class="no1">
                                         <div class="pic1">
-                                            <img src="../asset/img/lock.png" >
+                                            <img src="../asset/img/lock.png"  id="lock">
                                         </div>
                                         <p>未解鎖</p>
                                     </div>
                                     <div class="no1">
                                         <div class="pic1">
-                                            <img src="../asset/img/lock.png" >
+                                            <img src="../asset/img/lock.png"  id="lock">
                                         </div>
                                         <p>未解鎖</p>
                                     </div>
                                     <div class="no1">
                                         <div class="pic1">
-                                            <img src="../asset/img/lock.png" >
+                                            <img src="../asset/img/lock.png"  id="lock">
+                                        </div>
+                                        <p>未解鎖</p>
+                                    </div>
+                                    <div class="no1">
+                                        <div class="pic1">
+                                            <img src="../asset/img/lock.png"  id="lock">
+                                        </div>
+                                        <p>未解鎖</p>
+                                    </div>
+                                    <div class="no1">
+                                        <div class="pic1">
+                                            <img src="../asset/img/lock.png"  id="lock">
                                         </div>
                                         <p>未解鎖</p>
                                     </div>
@@ -144,17 +156,21 @@
                                         <p>地球日是每年的哪一天？</p>
                                         <div class="questiondiv">
                                             
-                                            <div class="quetion">
-                                      
-                                                <button class="bnt_question">(1) 6 月 6 號</button><br>
-                                                <button class="bnt_question">(2) 4 月 22 號</button><br>
-                                                <button class="bnt_question">(3) 5 月 28 號</button><br>
-                                                <button class="bnt_question">(4) 9 月 28 號</button>
+                                            <div class="question">
+
+                                                <form action="">
+                                                    <input type="radio" name="question" class="bnt_question"  checked><label >(1) 6 月 6 號</label> <br>
+                                                    <input type="radio" name="question" class="bnt_question" ><label >(1) 4 月 22 號</label> <br>
+                                                    <input type="radio" name="question" class="bnt_question" ><label >(1) 5 月 28 號</label> <br>
+                                                    <input type="radio" name="question" class="bnt_question" ><label >(1) 9 月 28 號</label> 
+                                                </form>
 
                                             </div>
                                         </div>
 
-                                        <div class="confirmdiv"><input class="confirm" type="button" value="確定選擇"></div>
+                                        <div class="confirmdiv">
+                                            <input type="submit"  class="confirm" value="確定選擇" style="cursor: pointer;" onclick="confrimalert()">
+                                        </div>
                                     </div>
                         
                                    
@@ -259,14 +275,15 @@
                                         
                                             <div class="toydiv">
                                                 <div class="toy1">
-                                                    <img src="../asset/img/fertilizer.png" >
+                                                    <span data-texto="肥料"><img src="../asset/img/fertilizer.png" ></span>
+                                                    
                                                     
                                                 </div>
                     
                                             </div>
                                             <div class="toydiv">
                                                 <div class="toy1">
-                                                    <img src="../asset/img/fertilizer2.png" >
+                                                    <span data-texto="水肥"><img src="../asset/img/fertilizer2.png" ></span>
                                                     
                                                 </div>
                     
@@ -289,6 +306,7 @@
         </div>
     </main>
     <script>
+        //遊戲主畫面之按鍵設定
         let btn=document.querySelector("#pcturebook");
         let btn2=document.querySelector("#question");
         let btn3=document.querySelector("#check");
@@ -318,7 +336,25 @@
         close.addEventListener("click", function(){
         infoModal.close();  
         })
+
+        //環保小問題之按鍵設定
+      
         
+        function confrimalert(){
+            
+            var yes = confirm('確定送出答案嗎？');
+
+            if (yes) {
+                alert('答對了！可再澆兩次水！');
+                //alert('答錯了！只能加一次QQ！');
+            } else {
+                alert('再選擇一次吧~~');
+            }
+          
+        }
+        
+
+
       
     </script>
     <iframe src="../page/nav.html" id="navBar" frameborder="0" scrolling="no"></iframe>
