@@ -143,7 +143,7 @@ select{
     width: 680px; height: 760px;
     padding: 30px 10px 30px 10px;
     font-family: "微軟正黑體";
-    overflow: hidden;
+    overflow: auto;
 }
 
 #record_title{
@@ -165,7 +165,7 @@ select{
 .record_content{
     margin: 10px 60px;
     font-size: 15px;
-    width: 560px;
+    width: 540px;
     line-height: 30px;
     
 }
@@ -190,10 +190,11 @@ select{
 
 
 #record_sum{
+    background-color: #85BDA6;
     position: relative;
     top: -870px;
     margin: 30px 60px 0px 60px;
-    width: 580px;
+    width: 580px;height: 78px;
     font-size: 25px;
     padding-top: 10px;
     border-top: black 2px solid;
